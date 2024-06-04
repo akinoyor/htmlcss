@@ -1,0 +1,33 @@
+header {
+  background-color:#EC715F;
+}
+
+.header-group {
+  display: flex;
+
+}
+
+.nav{
+  flex: 2;
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.nav-list {
+  width: 120px;
+  height: 70px;
+  font-size: 16px;
+  display: inline-block;
+  text-align: center;
+  align-content: center;
+}
+
+.nav-list a:link {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.nav-list a:visited {
+    color: white; /* 訪問済みリンクの文字色も白に設定 */
+}
