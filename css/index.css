@@ -8,6 +8,10 @@
 header {
   background-color:#EC715F;
 }
+
+p {
+  font-size: 16px;
+}
 .container {
   margin: auto;
   text-align: center;
@@ -43,7 +47,7 @@ header {
 }
 
 .nav-list a:visited {
-    color: white; /* 訪問済みリンクの文字色も白に設定 */
+  color: white; /* 訪問済みリンクの文字色も白に設定 */
 }
 
 .mv-group {
@@ -77,18 +81,17 @@ header {
 }
 
 .heading::after {
-    content: "";
-    display: block;
-    width: 70px;
-    height: 3px;
-    margin: 8px auto 0 auto;
-    background-color: #EC715F;
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  margin: 8px auto 0 auto;
+  background-color: #EC715F;
 }
 
 .heading-text{
   padding-top: 30px;
   color: black;
-  font-size: 16px;
 }
 
 .portfolio-img-group {
@@ -158,34 +161,31 @@ header {
 
 .feature-text {
   padding-top: 30px;
-  font-size: 16px;
 }
 
-.feature-messeges {
+.feature-messages {
   display: flex;
   justify-content: center;
-  align-items: center;
   padding-top: 30px;
   }
 
-.feature-messege{
+.feature-message {
   width: 320px;
   margin-right: 10px;
 }
-.feature-messege:nth-child(3){
+.feature-message:nth-child(3){
   margin-right: 0;
 }
-.feature-messege  i {
+.feature-message-image {
   font-size: 60px;
 }
-.feature-messege  h3 {
+.message-title {
   font-size: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.feature-messege p {
+.feature-message-text {
 text-align: left;
-font-size: 16px;
 }
 
 .profile-group {
@@ -193,10 +193,10 @@ font-size: 16px;
   padding-top: 90px;
   padding-bottom: 90px;
 }
-.profile-group h2 {
+.profile-title {
 font-size: 32px;
 }
-.profile-group h2::after {
+.profile-title::after {
   content: "";
   display: block;
   width: 70px;
@@ -205,22 +205,21 @@ font-size: 32px;
   background-color: #EC715F;
   margin-bottom: 30px;
 }
-.profile-group p{
-  font-size: 16px;
+.profile-title-message{
+  padding-bottom: 30px;
 }
 
-.profile-date {
+.profile-data {
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding-top: 30px;
 }
 
 .profile-image {
   width: 512px;
   height: 250px;
 }
-.profile-image img {
+
+.photo {
   border-radius:50%;
 }
 
@@ -232,10 +231,75 @@ font-size: 32px;
   font-size: 20px;
   padding-bottom: 5px;
 }
-.profile-text p {
-  font-size: 16px;
+.profile-message {
   padding-bottom: 20px;
 }
-.profile-text p:last-child{
+.profile-massage:last-child{
   padding-bottom: 0;
+}
+
+.contact-group {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.contact-title {
+  font-size: 32px;
+}
+
+.contact-title::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  margin: 8px auto 0 auto;
+  background-color: #EC715F;
+  margin-bottom: 30px;
+}
+
+.contact-title-message {
+  padding-bottom: 30px
+}
+
+.address-data-groups {
+  display: flex;
+  justify-content: center;
+}
+
+.address-group {
+  width: 400px;
+}
+
+.address-title {
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+
+.address {
+  width: 180px;
+  text-align: left;
+  margin: auto;
+}
+
+.address-body {
+  padding-bottom: 20px;
+}
+.address-body:last-child {
+  padding-bottom: 0;
+}
+
+.sns {
+  width: 200px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+}
+
+.sns-icons i {
+ padding-right: 20px;
+ font-size:50px;
+}
+.sns-icons i:last-child{
+  padding-right: 0;
 }
