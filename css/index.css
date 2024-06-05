@@ -11,13 +11,12 @@ header {
 .container {
   margin: auto;
   text-align: center;
-
 }
+
 .header-group {
-    width: 1024px;
+  width: 1024px;
   display: flex;
   justify-content: space-between;
-
 }
 
 .nav{
@@ -50,13 +49,14 @@ header {
 .mv-group {
   width: 100%;
   min-height: 650px;
+  padding-top: 200px;
   background-image: url(../img/mv.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
 .mv-title {
-  padding-top: 200px;
+
   font-size: 64px;
   color: #FAFAFA;
 }
@@ -67,11 +67,12 @@ header {
 }
 
 .portfolio-group{
-  width: 920px;
+  background-color: #ECEFF1;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 
 .heading {
-  padding-top: 90px;
   font-size: 32px;
 }
 
@@ -91,10 +92,12 @@ header {
 }
 
 .portfolio-img-group {
-  margin-top: 30px;
-  margin-bottom: 90px;
+  width: 920px;
+  padding-top: 30px;
   display: flex;
   flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .portfolio-img {
@@ -137,12 +140,11 @@ header {
 }
 
 .feature-group {
-  width: 980px;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
-
 .feature-title {
   font-size: 32Px;
-  padding-top: 90px;
 }
 
 .feature-title::after {
@@ -161,10 +163,10 @@ header {
 
 .feature-messeges {
   display: flex;
+  justify-content: center;
+  align-items: center;
   padding-top: 30px;
-}
-
-
+  }
 
 .feature-messege{
   width: 320px;
@@ -184,4 +186,56 @@ header {
 .feature-messege p {
 text-align: left;
 font-size: 16px;
+}
+
+.profile-group {
+  background-color: #ECEFF1;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.profile-group h2 {
+font-size: 32px;
+}
+.profile-group h2::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  margin: 8px auto 0 auto;
+  background-color: #EC715F;
+  margin-bottom: 30px;
+}
+.profile-group p{
+  font-size: 16px;
+}
+
+.profile-date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.profile-image {
+  width: 512px;
+  height: 250px;
+}
+.profile-image img {
+  border-radius:50%;
+}
+
+.profile-text {
+  width: 512px;
+  text-align: left;
+}
+.profile-main {
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+.profile-text p {
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+.profile-text p:last-child{
+  padding-bottom: 0;
 }
