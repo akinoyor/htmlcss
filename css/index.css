@@ -303,3 +303,14 @@ font-size: 32px;
 .sns-icons i:last-child{
   padding-right: 0;
 }
+
+footer {
+  background-color:#EC715F;
+}
+
+.footer-message {
+  height: 60px;
+  text-align: center;
+  color: #FAFAFA;
+  align-content: center;
+}
