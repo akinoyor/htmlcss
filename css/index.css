@@ -1,9 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color:#6c6b6b;
+}
+
 header {
   background-color:#EC715F;
 }
-
+.container {
+  width: 1024px;
+  margin: auto;
+}
 .header-group {
   display: flex;
+  justify-content: space-between;
 
 }
 
@@ -30,4 +41,35 @@ header {
 
 .nav-list a:visited {
     color: white; /* 訪問済みリンクの文字色も白に設定 */
+}
+
+#mv {
+  width: 100%;
+  min-height: 650px;
+  background-image: url(../img/mv.png);
+  /*background-color: black;*/
+  /*background-size: cover;*/
+  /*background-repeat: no-repeat;*/
+  /*background-position: center center;*/
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.mv-title {
+  height: 296px;
+  padding-top: 200px;
+  font-size: 64px;
+  color: white;
+}
+
+.mv-text {
+  padding-top: 10px;
+  color: white;
+}
+
+.heading {
+  padding-top: 90px;
+  font-size: 32px;
+  color: black;
+
 }
