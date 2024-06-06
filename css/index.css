@@ -19,10 +19,14 @@ p {
 
 .header-group {
   width: 1024px;
+  height: 70px;
   display: flex;
   justify-content: space-between;
 }
 
+.logo {
+  height: 70px;
+}
 .nav{
   flex: 2;
   display: flex;
@@ -39,6 +43,7 @@ p {
   display: inline-block;
   text-align: center;
   align-content: center;
+  align-items: center;
 }
 
 .nav-list a:link {
@@ -50,6 +55,9 @@ p {
   color: white; /* 訪問済みリンクの文字色も白に設定 */
 }
 
+.menu-box{
+  display: none;
+}
 .mv-group {
   width: 100%;
   min-height: 650px;
@@ -60,13 +68,12 @@ p {
   background-position: center center;
 }
 .mv-title {
-
   font-size: 64px;
   color: #FAFAFA;
+  padding-bottom: 10px;
 }
 
 .mv-text {
-  padding-top: 10px;
   color: #FAFAFA;
 }
 
@@ -155,25 +162,24 @@ p {
   display: block;
   width: 70px;
   height: 3px;
-  margin: 8px auto 0 auto;
+  margin: 8px auto 30px auto;
   background-color: #EC715F;
 }
 
 .feature-text {
-  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .feature-messages {
   display: flex;
   justify-content: center;
-  padding-top: 30px;
   }
 
 .feature-message {
   width: 320px;
   margin-right: 10px;
 }
-.feature-message:nth-child(3){
+.feature-message:last-child {
   margin-right: 0;
 }
 .feature-message-image {
@@ -313,4 +319,153 @@ footer {
   text-align: center;
   color: #FAFAFA;
   align-content: center;
+}
+
+@media screen and (max-width: 768px){
+  .header-group {
+    width: 90%;
+    height: 50px;
+  }
+
+  .logo {
+    height: 50px;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .menu-box {
+    display: inline-block;
+    color: #FFFFFF;
+    font-size: 26px;
+    border: 2px solid white;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .mv-group {
+    background-image: url(../img/code.png);
+  }
+
+  .mv-title {
+    width: 90%;
+    font-size: 40px;
+    margin:0 auto 0 auto;
+  }
+
+  .mv-text {
+    width: 90%;
+    font-size: 18px;
+    margin:0 auto 0 auto;
+  }
+
+  .heading {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .heading-text{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .portfolio-img-group {
+    width: 90%;
+    display: block;
+  }
+
+  .portfolio-img:nth-child(odd) {
+    display: none;
+  }
+  .portfolio-img:nth-child(even) {
+    margin: 0 auto 10px auto;
+  }
+  .portfolio-img:last-child {
+    margin-bottom: 0;
+  }
+
+  .feature-title {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .feature-text {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+  .feature-messages {
+    width: 90%;
+    display: block;
+    margin: 0 auto 0 auto;
+  }
+
+  .feature-message {
+    margin:0 auto 10px auto;
+  }
+  .feature-message:last-child {
+    margin:0 auto 0 auto;
+  }
+
+  .profile-title {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .profile-title-message{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .profile-data {
+    display: block;
+    width: 90%;
+    margin:0 auto 0 auto;
+  }
+  .profile-image {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .profile-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact-title {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contact-title-message {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .address-data-groups {
+    display: block;
+  }
+
+  .address-group {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+  .address-group:las-child {
+    margin-bottom: 0;
+  }
+
+  .address,.sns{
+    text-align: center;
+  }
 }
